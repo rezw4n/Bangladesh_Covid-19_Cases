@@ -23,6 +23,8 @@ def district_data_updater(df):
         "Coxâs bazar": "Cox's Bazar",
         "B. Baria": "Brahmanbaria",
         "Jessore": "Jashore",
+        "Munshigonj": "Munshiganj",
+        "Laksmipur": "Lakshmipur",
     }
     df['District/City'] = df['District/City'].map(changed_district_name).fillna(df['District/City'])
     df['Total No of Cases'] = df['Total No of Cases'].astype(int)
