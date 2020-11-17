@@ -11,9 +11,9 @@ def data_updater(dataframe):
     bd = country_group.get_group('Bangladesh')
     nan_indexes = bd[bd['cumulative_cases'] == 0].index
     bd_daily_cases = bd.drop(index=nan_indexes)
+    df['date_reported'] = pd.to_datetime(df['date_reported'])
     bd_daily_cases.set_index('date_reported', inplace=True)
-    with open('bd_daily_cases.pkl', 'wb') as output_file:
-        return pickle.dump(bd_daily_cases, output_file), bd_daily_cases.to_csv('bd_daily_cases.csv')
+    return bd_daily_cases.to_pickle('../Data/bd_daily_cases.pkl'), bd_daily_cases.to_csv('../Data/bd_daily_cases.csv')
 
 
 data_updater(df)
