@@ -29,7 +29,8 @@ def district_data_updater(df):
     df['District/City'] = df['District/City'].map(changed_district_name).fillna(df['District/City'])
     df['Total No of Cases'] = df['Total No of Cases'].astype(int)
     df.sort_values(by='Total No of Cases', ascending=False, inplace=True)
-    df.columns = ['district', 'total_number_of_cases']
+    df.columns = ['district', 'total_cases']
+    # df.rename(columns={"District/City": "district", "Total No of Cases": "total_cases"}, inplace=True)
     df.set_index('district', inplace=True)
     return df.to_pickle('../Data/district_cases.pkl'), df.to_csv('../Data/district_cases.csv')
 
