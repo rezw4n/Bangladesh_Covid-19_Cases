@@ -1,5 +1,5 @@
 import pandas as pd
-import pickle
+
 
 df = pd.read_csv('https://covid19.who.int/WHO-COVID-19-global-data.csv')
 
