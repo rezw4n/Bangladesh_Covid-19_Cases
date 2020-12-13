@@ -1,5 +1,5 @@
 import pandas as pd
-import pickle
+
 
 dataframe = pd.read_html(
     'https://docs.google.com/spreadsheets/d/e/2PACX-1vQgQAWwlQYF4XTxVT8sYP5wwqz_KxaWfVNQk9B0FlyPPpDphAIv1cRIMV4ve_1gNbewGjcbkKNpi3Wm/pub?gid=624602850&#')[
