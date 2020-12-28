@@ -292,3 +292,6 @@ date_reported,country,new_cases,cumulative_cases,new_deaths,cumulative_deaths
 2020-12-23,Bangladesh,1318,503501,17,7329
 2020-12-24,Bangladesh,1367,504868,30,7359
 2020-12-25,Bangladesh,1234,506102,19,7378
+2020-12-26,Bangladesh,1163,507265,20,7398
+2020-12-27,Bangladesh,834,508099,30,7428
+2020-12-28,Bangladesh,1049,509148,24,7452
