@@ -357,3 +357,6 @@ date_reported,country,new_cases,cumulative_cases,new_deaths,cumulative_deaths
 2021-02-26,Bangladesh,410,544954,5,8384
 2021-02-27,Bangladesh,470,545424,11,8395
 2021-02-28,Bangladesh,407,545831,5,8400
+2021-03-01,Bangladesh,385,546216,8,8408
+2021-03-02,Bangladesh,585,546801,8,8416
+2021-03-03,Bangladesh,515,547316,7,8423
